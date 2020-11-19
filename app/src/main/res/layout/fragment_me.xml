@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:background="#0094FF"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+        <ImageView
+            android:id="@+id/me_header"
+            android:src="@drawable/user_default"
+            android:layout_centerInParent="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/me_name"
+            android:layout_below="@+id/me_header"
+            android:text="点击登陆"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <!--android:background="@drawable/tile_test"-->
+
+        <Button
+            android:id="@+id/me_deposit"
+            android:textSize="20sp"
+            android:text="充值"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/me_withdraw_deposit"
+            android:textSize="20sp"
+            android:text="提现"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/me_my_assets"
+        android:textSize="20sp"
+        android:layout_height="36dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="资产分布"
+        android:layout_width="match_parent"
+       />
+    <TextView
+        android:id="@+id/me_my_yield"
+        android:textSize="20sp"
+        android:layout_height="36dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="年化收益率变化"
+        android:layout_width="match_parent"
+         />
+    <TextView
+        android:id="@+id/me_my_profit"
+        android:textSize="20sp"
+        android:layout_height="36dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="每日收益"
+        android:layout_width="match_parent"
+         />
+</LinearLayout>

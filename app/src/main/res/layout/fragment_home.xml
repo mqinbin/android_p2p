@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAA"
+        android:orientation="vertical">
+
+        <com.qinbin.arl.AutoRollLayout
+            android:id="@+id/home_arl"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <ImageView
+            android:id="@+id/home_ad"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_finance"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_finance_recommend_one"
+                layout="@layout/part_home_finance" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_finance_recommend_two"
+                layout="@layout/part_home_finance" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_invest"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_invest_one"
+                layout="@layout/part_home_invest" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_invest_two"
+                layout="@layout/part_home_invest" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_fund"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_fund_images"
+                layout="@layout/part_home_images" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_fund_one"
+                layout="@layout/part_home_fund" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_fund_two"
+                layout="@layout/part_home_fund" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_consume"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_consume_images"
+                layout="@layout/part_home_images" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_insurance"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_insurance_images"
+                layout="@layout/part_home_images" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_other"
+                layout="@layout/part_home_title_more" />
+
+            <include layout="@layout/part_home_line" />
+
+            <include
+                android:id="@+id/home_other_images"
+                layout="@layout/part_home_images" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

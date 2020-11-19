@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/arl_arl_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+        <LinearLayout
+            android:layout_gravity="bottom|right"
+            android:id="@+id/arl_arl_dot_container"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--View
+                android:background="@drawable/arl_red_dot"
+                android:layout_width="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp" />
+            <View
+                android:background="@drawable/arl_white_dot"
+                android:layout_width="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp" />
+            <View
+                android:background="@drawable/arl_white_dot"
+                android:layout_width="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp" /-->
+        </LinearLayout>
+
+
+</FrameLayout>

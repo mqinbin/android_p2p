@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#FFF"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/item_finance_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="牛稳赚NJFAE30100502"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_finance_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_finance_name"
+        android:background="@drawable/finance_tag_tv_bg"
+        android:padding="2dp"
+        android:text="途牛宝支付可变现"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/item_finance_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_finance_name"
+        android:layout_margin="4dp"
+        android:background="#AAA" />
+
+    <com.qinbin.p2p.widget.RingProgress
+        android:id="@+id/item_finance_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_finance_line"
+        app:stroke_width="6dp"
+        app:text_size="10sp" />
+
+    <TableLayout
+        android:id="@+id/item_finance_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_finance_line"
+        android:layout_toLeftOf="@+id/item_finance_progress">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/item_finance_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6.50"
+                android:textColor="#F00"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/item_finance_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="365" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年化收益率(%)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="投资期限(天)" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/item_finance_action"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/item_finance_table"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/product_action_btn_bg"
+        android:text="立即抢购"
+        android:textColor="#FFF" />
+</RelativeLayout>

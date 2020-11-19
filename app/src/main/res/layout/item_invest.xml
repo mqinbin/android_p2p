@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_marginBottom="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/item_invest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="牛稳赚NJFAE30100502"
+        android:textSize="18sp" />
+
+
+
+    <View
+        android:id="@+id/item_invest_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_invest_name"
+        android:layout_margin="4dp"
+        android:background="#AAA" />
+
+    <com.qinbin.p2p.widget.RingProgress
+        app:text_size="10sp"
+        app:stroke_width="6dp"
+        android:id="@+id/item_invest_progress"
+        android:layout_below="@+id/item_invest_line"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TableLayout
+        android:id="@+id/item_invest_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_invest_progress"
+        android:layout_below="@+id/item_invest_line">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/item_invest_rate"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textColor="#F00"
+                android:text="6.50" />
+
+            <TextView
+                android:id="@+id/item_invest_days"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="365" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="年化收益率" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="投资期限" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/item_invest_action"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/item_invest_table"
+        android:text="立即抢购"
+        android:background="@drawable/product_action_btn_bg"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+</RelativeLayout>

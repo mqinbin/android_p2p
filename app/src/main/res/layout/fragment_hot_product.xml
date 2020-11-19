@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qinbin.p2p.widget.FlyLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qinbin.p2p.widget.RandomLayout
+        android:id="@+id/hot_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="水平的">
+
+
+
+
+    </com.qinbin.p2p.widget.RandomLayout>
+
+    <com.qinbin.p2p.widget.RandomLayout
+        android:id="@+id/hot_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:tag="垂直的">
+
+
+
+    </com.qinbin.p2p.widget.RandomLayout>
+</com.qinbin.p2p.widget.FlyLayout>

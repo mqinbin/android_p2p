@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/part_fund_tag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/img_re" />
+
+    <TextView
+        android:id="@+id/part_fund_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/part_fund_tag"
+        android:gravity="center_vertical"
+        android:text="月月赢"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/part_fund_type"
+        android:layout_toRightOf="@+id/part_fund_name"
+        android:textColor="#0094FF"
+        android:padding="4dp"
+        android:layout_alignBottom="@+id/part_fund_name"
+        android:text="债券型"
+        android:background="@drawable/home_fund_type_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/part_fund_name">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/part_fund_net_worth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="36dp"
+                android:gravity="center"
+                android:text="1.33"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/part_fund_raise"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="36dp"
+                android:gravity="center"
+                android:text="5.97"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:gravity="center"
+                android:text="最新净值(元)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:gravity="center"
+                android:text="近1年涨跌幅(%)"
+                android:textSize="16sp" />
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

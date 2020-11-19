@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/part_invest_tag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/img_gao" />
+
+    <TextView
+        android:id="@+id/part_invest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/part_invest_tag"
+        android:gravity="center_vertical"
+        android:text="月月赢"
+        android:textSize="24sp" />
+
+    <com.qinbin.p2p.widget.RingProgress
+        app:stroke_width="10px"
+        app:text_size="16sp"
+        android:id="@+id/part_invest_progress"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TableLayout
+        android:layout_toLeftOf="@+id/part_invest_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/part_invest_name">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/part_invest_rate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="36dp"
+                android:gravity="center"
+                android:text="5.00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/part_invest_days"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="36dp"
+                android:gravity="center"
+                android:text="30"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:gravity="center"
+                android:text="年化收益率(%)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:gravity="center"
+                android:text="投资期限(天)"
+                android:textSize="16sp" />
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guide1_outer_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guide1_inner_vp"
+        android:layout_centerInParent="true"
+        android:layout_width="180dp"
+        android:layout_height="320dp" />
+
+    <View
+        android:id="@+id/guide1_touch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

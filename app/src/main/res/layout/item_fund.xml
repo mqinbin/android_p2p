@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/item_fund_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基金名称"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/item_fund_tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_fund_name"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/fund_tag_bg"
+            android:padding="2dp"
+            android:text="债券型"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/fund_tag_bg"
+            android:padding="2dp"
+            android:text="较低风险"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/fund_tag_bg"
+            android:padding="2dp"
+            android:text="1000元起投"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+
+        android:id="@+id/item_fund_h_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_fund_tag_container"
+        android:layout_margin="4dp"
+        android:background="#AAA" />
+
+    <View
+        android:id="@+id/item_fund_v_line"
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/item_fund_h_line"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:background="#AAA" />
+
+    <TableLayout
+        android:id="@+id/item_fund_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_fund_h_line">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/item_fund_net_worth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1.23"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/item_fund_raise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+2.13"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最新净值(元)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="近一年涨幅(%)" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
